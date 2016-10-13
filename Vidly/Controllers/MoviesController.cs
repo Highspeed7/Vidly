@@ -12,15 +12,20 @@ namespace Vidly.Controllers
         // GET: Movies
         public ActionResult Random()
         {
-            var movie = new Movie() {Name = "Shrek!"};
-            return View(movie);
+
+            var movies = GetAllMovies();
+
+            return View(movies);
         }
 
-        [Route("movies/released/{year}/{month:regex(\\d{2}):range(1, 12)}")]
-        public ActionResult ByReleaseDate(int year, int month)
+        private IEnumerable<Movie> GetAllMovies()
         {
-            return Content(year + "/" + month);
+            return new List<Movie>
+            {
+                new Movie() {id = 1, Name = "Red Dawn"},
+                new Movie() {id = 2, Name = "Goosebumps"},
+                new Movie() {id = 3, Name = "Shrek"}
+            };
         }
-
     }
 }

@@ -1,10 +1,10 @@
-﻿@model IEnumerable<Vidly.Models.Movie>
+﻿@model IEnumerable<Vidly.Models.Customer>
 @{
-    ViewBag.Title = "Random";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Movies</h2>
+<h2>Customers</h2>
 
 @if (!Model.Any())
 {
@@ -19,11 +19,13 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var movie in Model)
+            @foreach (var customer in Model)
             {
-                <tr><td>@movie.Name</td></tr>
+                <tr><td>@Html.ActionLink(@customer.Name, "Details", "Customers", new {id = @customer.Id}, null)</td></tr>
             }
         </tbody>
     </table>
 }
+
+
 
