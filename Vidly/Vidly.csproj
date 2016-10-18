@@ -215,6 +215,18 @@
     <Compile Include="Migrations\201610170711541_PopulateGenreTable.Designer.cs">
       <DependentUpon>201610170711541_PopulateGenreTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610171753137_AddBirthdateToCustomersTable.cs" />
+    <Compile Include="Migrations\201610171753137_AddBirthdateToCustomersTable.Designer.cs">
+      <DependentUpon>201610171753137_AddBirthdateToCustomersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610171756467_AddBirthdayToCustomersTable.cs" />
+    <Compile Include="Migrations\201610171756467_AddBirthdayToCustomersTable.Designer.cs">
+      <DependentUpon>201610171756467_AddBirthdayToCustomersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610180106111_SetBirthdateNullable.cs" />
+    <Compile Include="Migrations\201610180106111_SetBirthdateNullable.Designer.cs">
+      <DependentUpon>201610180106111_SetBirthdateNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -313,6 +325,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610170711541_PopulateGenreTable.resx">
       <DependentUpon>201610170711541_PopulateGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610171753137_AddBirthdateToCustomersTable.resx">
+      <DependentUpon>201610171753137_AddBirthdateToCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610171756467_AddBirthdayToCustomersTable.resx">
+      <DependentUpon>201610171756467_AddBirthdayToCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610180106111_SetBirthdateNullable.resx">
+      <DependentUpon>201610180106111_SetBirthdateNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
